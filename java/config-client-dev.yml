@@ -1,7 +1,9 @@
 message: Dev environment 1
 
-#eureka:
-#  client:
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
 #    serviceUrl: 
 #       defaultZone: ${EUREKA_URI:http://localhost:8982/eureka}
 #  instance:
