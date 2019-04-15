@@ -44,3 +44,9 @@ eureka:
     preferIpAddress: true
     metadataMap:
       instanceId: ${sidecar.appName}:${sidecar.port}
+      
+zuul:
+  routes:
+    config-client:
+      path: /config-client/**
+      url: http://${sidecar.hostname}:${server.port}
