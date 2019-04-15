@@ -33,7 +33,7 @@ sidecar:
 eureka:
   client:
     registerWithEureka: true
-    fetchRegistry: false
+    fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8982/eureka}
   instance:
@@ -49,4 +49,4 @@ zuul:
   routes:
     config-client:
       path: /config-client/**
-      url: http://${sidecar.hostname}:${server.port}
+      url: http://localhost:8981
