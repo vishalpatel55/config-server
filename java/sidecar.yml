@@ -2,6 +2,22 @@ spring:
   application:
     name: sidecar
     
+server: 
+  port: 8983
+  
+management:
+  security:
+    enabled: false
+  endpoints:
+    enabled: false
+    info:
+      enabled: true
+    health:
+      enabled: true
+      sensitive: false
+    metrics:
+      enabled: true
+    
 sidecar:
   hostname: localhost
   # port should be passed from command line (eg java -jar ... --sidecar.port=5432 ...)
