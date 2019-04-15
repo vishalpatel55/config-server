@@ -1,8 +1,8 @@
 message: Dev environment 1
 
-eureka:
-  client:
-    serviceUrl: 
-       defaultZone: ${EUREKA_URI:http://localhost:8982/eureka}
-  instance:
-    preferIpAddress: true
+#eureka:
+#  client:
+#    serviceUrl: 
+#       defaultZone: ${EUREKA_URI:http://localhost:8982/eureka}
+#  instance:
+#    preferIpAddress: true
