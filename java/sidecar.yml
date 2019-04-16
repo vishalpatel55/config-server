@@ -19,9 +19,9 @@ management:
       enabled: true
     
 sidecar:
-  hostname: 172.16.1.5
+  hostname: localhost
   # port should be passed from command line (eg java -jar ... --sidecar.port=5432 ...)
-  port: 10200
+  port: 8981
   # health-uri the service uri returning health data in the form of { "status": "UP" } or
   # http://localhost:${sidecar.port}/${health-uri:health.json} if the service provides such endpoint.
   health-uri: http://localhost:${server.port}/delegating-status
@@ -49,4 +49,4 @@ zuul:
   routes:
     config-client:
       path: /config-client/**
-      url: http://172.16.1.5:10200
+      url: http://${sidecar.hostname}:${server.port}
