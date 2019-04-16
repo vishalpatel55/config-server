@@ -6,17 +6,12 @@ server:
   port: 8983
   
 management:
-  security:
-    enabled: false
-  endpoints:
-    enabled: false
-    info:
-      enabled: true
-    health:
-      enabled: true
-      sensitive: false
-    metrics:
-      enabled: true
+    security: 
+      enabled: false
+    endpoints: 
+      web: 
+       exposure: 
+        include: '*' 
     
 sidecar:
   hostname: localhost
