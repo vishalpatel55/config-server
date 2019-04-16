@@ -12,6 +12,12 @@ eureka:
   instance:
     preferIpAddress: true
     
+zuul:
+  routes:
+    sidecar:
+      path: /sidecar/**
+      serviceId: sidecar
+    
 management:
     security: 
       enabled: false
