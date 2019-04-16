@@ -49,7 +49,7 @@ zuul:
       
 hystrix:
   command:
-    default:
+    config-client:
       execution:
         isolation:
           thread:
