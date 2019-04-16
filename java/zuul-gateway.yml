@@ -17,6 +17,9 @@ zuul:
     sidecar:
       path: /service/**
       serviceId: sidecar
+    sidecar1:
+      path: /product-service/**
+      serviceId: sidecar1
       
 hystrix:
   command:
