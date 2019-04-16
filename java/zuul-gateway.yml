@@ -17,6 +17,14 @@ zuul:
     sidecar:
       path: /service/**
       serviceId: sidecar
+      
+hystrix:
+  command:
+    sidecar:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
     
 management:
     security: 
