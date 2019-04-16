@@ -42,7 +42,7 @@ eureka:
       
 zuul:
   routes:
-    config-client:
+    product-service:
       path: /config-client/**
       url: http://172.16.1.5:10200
       
