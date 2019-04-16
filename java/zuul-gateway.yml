@@ -15,7 +15,7 @@ eureka:
 zuul:
   routes:
     sidecar:
-      path: /property1/**
+      path: /service/**
       serviceId: sidecar
     
 management:
