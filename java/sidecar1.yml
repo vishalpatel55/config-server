@@ -1,9 +1,9 @@
 spring:
   application:
-    name: sidecar
+    name: sidecar1
     
 server: 
-  port: 8983
+  port: 8984
   
 management:
     security: 
