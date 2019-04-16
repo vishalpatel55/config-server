@@ -21,7 +21,7 @@ sidecar:
   # http://localhost:${sidecar.port}/${health-uri:health.json} if the service provides such endpoint.
   health-uri: http://localhost:${server.port}/delegating-status
   # Sidecar controller
-  home-page-uri: http://${sidecar.hostname}:${server.port}/
+  home-page-uri: http://localhost:${server.port}/
   service:
     enabled: true
     
@@ -43,7 +43,7 @@ eureka:
 zuul:
   routes:
     product-service:
-      path: /config-client/**
+      path: /product-service/**
       url: http://172.16.1.5:10200
       
       
