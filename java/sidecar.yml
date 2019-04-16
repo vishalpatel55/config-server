@@ -50,3 +50,11 @@ zuul:
     config-client:
       path: /config-client/**
       url: http://localhost:8981
+      
+hystrix:
+  command:
+    config-client:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
