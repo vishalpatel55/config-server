@@ -29,12 +29,12 @@ hystrix:
           thread:
             timeoutInMilliseconds: 60000
       circuitBreaker: 
-        requestVolumeThreshold: 5
-        errorThresholdPercentage: 10
-        sleepWindowInMilliseconds: 5000
+        requestVolumeThreshold: 2
+        errorThresholdPercentage: 5
+        sleepWindowInMilliseconds: 1000
       metrics: 
         rollingStats: 
-          timeInMilliseconds: 30000
+          timeInMilliseconds: 5000
     sidecar1:
       execution:
         isolation:
