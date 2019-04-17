@@ -1,0 +1,21 @@
+message: Dev environment test data
+
+server:
+  port: 8986
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+#    serviceUrl: 
+#       defaultZone: ${EUREKA_URI:http://localhost:8982/eureka}
+#  instance:
+#    preferIpAddress: true
+
+management:
+    security: 
+      enabled: false
+    endpoints: 
+      web: 
+       exposure: 
+        include: '*' 
