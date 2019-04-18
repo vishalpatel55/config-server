@@ -1,5 +1,5 @@
 message: Dev environment test data
-exception: true
+exception: false
 
 server:
   port: 8981
