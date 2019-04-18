@@ -30,7 +30,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://172.16.1.24:8982/eureka}
+      defaultZone: ${EUREKA_URI:http://172.16.0.173:8982/eureka}
   instance:
     appname: ${spring.application.name}
     hostname: ${sidecar.hostname}
