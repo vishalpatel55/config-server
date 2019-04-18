@@ -1,5 +1,5 @@
 message: Dev environment local profile
-exception: true
+exception: false
 
 server:
   port: 8986
