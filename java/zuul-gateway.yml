@@ -14,16 +14,16 @@ eureka:
     
 zuul:
   routes:
-    sidecar:
+    config-client:
       path: /service/**
-      serviceId: sidecar
+      serviceId: config-client
     sidecar1:
       path: /product-service/**
       serviceId: sidecar1
       
 hystrix:
   command:
-    sidecar:
+    config-client:
       execution:
         isolation:
           thread:
