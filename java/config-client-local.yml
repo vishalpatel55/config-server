@@ -8,10 +8,10 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-#    serviceUrl: 
-#       defaultZone: ${EUREKA_URI:http://localhost:8982/eureka}
-#  instance:
-#    preferIpAddress: true
+    serviceUrl: 
+       defaultZone: ${EUREKA_URI:http://localhost:8982/eureka}
+  instance:
+    preferIpAddress: true
 
 management:
     security: 
